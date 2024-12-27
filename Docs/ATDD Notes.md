@@ -362,9 +362,3 @@ public class TestDebugger {
    - Requirement traceability
    - Test strategy document
 
-## Contact and Support
-
-For industrial implementation support:
-- Technical Support: [Email]
-- Documentation: [Wiki Link]
-- Community Forum: [Link]
