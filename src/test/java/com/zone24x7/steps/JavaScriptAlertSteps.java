@@ -3,18 +3,21 @@ package com.zone24x7.steps;
 import com.zone24x7.base.BaseTest;
 import com.zone24x7.pages.HomePage;
 import com.zone24x7.pages.JavaScriptAlertPage;
+import com.zone24x7.utils.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.WebDriver;
 
-public class JavaScriptAlertSteps extends BaseTest {
+public class JavaScriptAlertSteps {
 
         HomePage homePage;
         JavaScriptAlertPage javaScriptAlertPage;
 
 
-        @Given("I navigate to The Internet Herokuapp")
+    @Given("I navigate to The Internet Herokuapp")
         public void iNavigateToTheInternetHerokuapp() {
+        WebDriver driver = DriverFactory.getDriver();
             homePage = new HomePage(driver);
         }
 
