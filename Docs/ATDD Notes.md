@@ -84,18 +84,19 @@ project-root/
 ### 2.3 Dependencies Management
 Example enterprise-grade POM configuration:
 ```xml
-<properties>
+
+ <properties>
     <cucumber.version>7.15.0</cucumber.version>
     <selenium.version>4.16.1</selenium.version>
     <spring.version>2.7.18</spring.version>
-</properties>
+ </properties>
 
-<dependencies>
+ <dependencies>
     <!-- Core Dependencies -->
     <!-- Testing Framework -->
     <!-- Reporting Tools -->
     <!-- CI/CD Integration -->
-</dependencies>
+ </dependencies>
 ```
 
 ## 3. Writing Enterprise-Level Tests

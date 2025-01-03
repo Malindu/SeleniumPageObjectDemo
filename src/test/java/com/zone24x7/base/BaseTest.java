@@ -1,4 +1,4 @@
-package org.example.BaseTest;
+package com.zone24x7.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
