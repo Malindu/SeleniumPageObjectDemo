@@ -13,17 +13,19 @@ public class JavaScriptAlertSteps {
 
         HomePage homePage;
         JavaScriptAlertPage javaScriptAlertPage;
+        WebDriver  driver;
 
-
-    @Given("I navigate to The Internet Herokuapp")
+       @Given("I navigate to The Internet Herokuapp")
         public void iNavigateToTheInternetHerokuapp() {
-        WebDriver driver = DriverFactory.getDriver();
+            driver= DriverFactory.getDriver();
+            driver.get("https://the-internet.herokuapp.com/");
             homePage = new HomePage(driver);
         }
 
         @When("I go to the {string} page")
         public void iGoToThePage(String pageName) {
             if (pageName.equals("JavaScriptAlert")) {
+                System.out.println(">>>>>>");
                 javaScriptAlertPage = homePage.clickOnJavaScriptAlertLink();
             }
         }
