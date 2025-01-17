@@ -41,4 +41,9 @@ public class HomePage extends BasePage {
         super.waitForElementToBeClickable(shadowDOM_Lnk).click();
         return new ShadowDOMPage(uiDriver);
     }
+
+    public FramesPage clickOnFramesLink() {
+        super.waitForElementToBeClickable(iframe_Lnk).click();
+        return new FramesPage(uiDriver);
+    }
 }
