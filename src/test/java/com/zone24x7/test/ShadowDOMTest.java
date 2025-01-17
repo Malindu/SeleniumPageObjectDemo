@@ -1,9 +1,9 @@
-package org.example.Tests;
+package com.zone24x7.test;
 
-import org.example.BaseTest.BaseTest;
-import org.example.Pages.FramesPage;
-import org.example.Pages.HomePage;
-import org.example.Pages.IFramesPage;
+import com.zone24x7.base.BaseTest;
+
+import com.zone24x7.pages.HomePage;
+
 import org.example.Pages.ShadowDOMPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

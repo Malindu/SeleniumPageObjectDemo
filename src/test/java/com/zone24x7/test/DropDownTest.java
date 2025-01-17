@@ -1,8 +1,8 @@
-package org.example.Tests;
+package com.zone24x7.test;
 
-import org.example.BaseTest.BaseTest;
-import org.example.Pages.DropDownPage;
-import org.example.Pages.HomePage;
+import com.zone24x7.base.BaseTest;
+import com.zone24x7.pages.DropDownPage;
+import com.zone24x7.pages.HomePage;
 import org.testng.annotations.Test;
 
 public class DropDownTest extends BaseTest {

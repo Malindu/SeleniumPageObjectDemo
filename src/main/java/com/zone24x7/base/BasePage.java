@@ -22,8 +22,8 @@ public class BasePage {
                 .ignoring(NoSuchElementException.class);
     }
 
-    public void waitForElementToBeVisible(By locator) {
-        this.wait.until(ExpectedConditions.visibilityOf(uiDriver.findElement(locator)));
+    public WebElement waitForElementToBeVisible(By locator) {
+        return this.wait.until(ExpectedConditions.visibilityOf(uiDriver.findElement(locator)));
     }
 
     public WebElement waitForElementToBeClickable(By locator) {

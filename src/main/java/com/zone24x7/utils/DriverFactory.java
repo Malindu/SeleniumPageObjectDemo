@@ -16,6 +16,31 @@ public class DriverFactory {
         return driver;
     }
 
+    public static WebDriver getDriver(String browser) {
+        if (driver == null) {
+            switch (browser){
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+
+                    driver = new ChromeDriver();
+                    driver.manage().window().maximize();
+                case "firefox" :
+                    WebDriverManager.chromedriver().setup();
+
+                    driver = new ChromeDriver();
+                    driver.manage().window().maximize();
+
+            }
+            WebDriverManager.chromedriver().setup();
+
+            driver = new ChromeDriver();
+            driver.manage().window().maximize();
+        }
+        return driver;
+    }
+
+
+
     public static void quitDriver() {
         if (driver != null) {
             driver.quit();

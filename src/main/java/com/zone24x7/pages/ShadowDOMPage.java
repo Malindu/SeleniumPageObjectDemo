@@ -1,6 +1,6 @@
-package org.example.Pages;
+package com.zone24x7.pages;
 
-import org.example.Base.BasePage;
+import com.zone24x7.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

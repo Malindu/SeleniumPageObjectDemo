@@ -7,9 +7,10 @@ import com.zone24x7.utils.DriverFactory;
 
 @CucumberOptions(
         features = "src/test/java/com/zone24x7/features",
-        glue = {"com.zone24x7.steps", "com.zone24x7.hooks"},
+        glue = {"com.zone24x7.steps"},
         plugin = {"pretty", "html:target/cucumber-reports.html"},
-        monochrome = true
+        monochrome = true,
+        tags = "@Regression"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @AfterSuite

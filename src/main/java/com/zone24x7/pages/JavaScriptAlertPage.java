@@ -16,6 +16,7 @@ public class JavaScriptAlertPage extends BasePage {
     }
 
     public void clickJSAlertButton() {
+
     }
 
     public void acceptAlertPopup() {

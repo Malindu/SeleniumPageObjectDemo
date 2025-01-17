@@ -9,6 +9,9 @@ public class HomePage extends BasePage {
     private final By banner_Txt = By.xpath("//h1[@class='heading']");
     private final By dropDown_Lnk = By.xpath("//a[contains(text(),'Dropdown')]");
     private final By jsAlert_Lnk = By.xpath("//a[contains(text(),'JavaScript Alerts')]");
+    private final By iframe_Lnk = By.xpath("(//a[contains(text(),'Frames')])[1]");
+
+    private final By shadowDOM_Lnk = By.xpath("(//a[contains(text(),'Frames')])[1]");
 
 
     public HomePage(WebDriver uiDriver){
@@ -27,5 +30,15 @@ public class HomePage extends BasePage {
     public JavaScriptAlertPage clickOnJavaScriptAlertLink(){
         super.waitForElementToBeClickable(jsAlert_Lnk).click();
         return new JavaScriptAlertPage(uiDriver);
+    }
+
+    public IframePage clickOnIframePageLink(){
+        super.waitForElementToBeClickable(iframe_Lnk).click();
+        return new IframePage(uiDriver);
+    }
+
+    public ShadowDOMPage clickOnShadowDOMLink() {
+        super.waitForElementToBeClickable(shadowDOM_Lnk).click();
+        return new ShadowDOMPage(uiDriver);
     }
 }
